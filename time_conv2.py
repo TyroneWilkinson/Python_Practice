@@ -23,12 +23,12 @@ def timeConversion2(s):
 	print("%02d:%02d:%02d" % (hh, mm, ss))
 
 if __name__ == '__main__':
-    f = open(os.environ['OUTPUT_PATH'], 'w')
+	f = open(os.environ['OUTPUT_PATH'], 'w')
 
-    s = input()
+	s = input()
 
-    result = timeConversion2(s)
+	result = timeConversion2(s)
 
-    f.write(result + '\n')
+	f.write(result + '\n')
 
-    f.close()
+	f.close()

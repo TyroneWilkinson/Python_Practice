@@ -19,6 +19,6 @@ def staircase(n):
 		i += 1
 
 if __name__ == '__main__':
-    n = int(input())
-		
-    staircase(n)
+	n = int(input())
+	
+	staircase(n)

@@ -34,18 +34,18 @@ def chocolateFeast(n, c, m):
 	return b
 	
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+	fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    t = int(input())
+	t = int(input())
 
-    for t_itr in range(t):
-        ncm = input().split()
+	for t_itr in range(t):
+		ncm = input().split()
 
-        n = int(ncm[0])
+		n = int(ncm[0])
 
-        c = int(ncm[1])
+		c = int(ncm[1])
 
-        m = int(ncm[2])
+		m = int(ncm[2])
 
         result = chocolateFeast(n, c, m)
 

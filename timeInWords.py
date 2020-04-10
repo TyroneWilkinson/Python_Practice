@@ -76,14 +76,14 @@ timeInWords(5, 59)
 """	
 					
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+	fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    h = int(input())
+	h = int(input())
 
-    m = int(input())
+	m = int(input())
 
-    result = timeInWords(h, m)
+	result = timeInWords(h, m)
 
-    fptr.write(result + '\n')
+	fptr.write(result + '\n')
 
-    fptr.close()
+	fptr.close()

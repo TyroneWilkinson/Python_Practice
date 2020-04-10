@@ -26,24 +26,24 @@ def serviceLane(cases, width):
 	return mins
 	
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+	fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    nt = input().split()
+	nt = input().split()
 
-    n = int(nt[0])
+	n = int(nt[0])
 
-    t = int(nt[1])
+	t = int(nt[1])
 
-    width = list(map(int, input().rstrip().split()))
+	width = list(map(int, input().rstrip().split()))
 
-    cases = []
+	cases = []
 
-    for _ in range(t):
-        cases.append(list(map(int, input().rstrip().split())))
+	for _ in range(t):
+		cases.append(list(map(int, input().rstrip().split())))
 
-    result = serviceLane(cases, width)
+	result = serviceLane(cases, width)
 
-    fptr.write('\n'.join(map(str, result)))
-    fptr.write('\n')
+	fptr.write('\n'.join(map(str, result)))
+	fptr.write('\n')
 
-    fptr.close()
+	fptr.close()
