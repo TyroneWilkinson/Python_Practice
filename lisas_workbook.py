@@ -26,7 +26,7 @@ def workbook(n, k, arr):
 	pgs = specials = 0
 	for i, probs in enumerate(arr):
 		new_pgs = 0
-		chapters = i + 1
+		chapters = i + 1 # Didn't use--don't need 'enumerate' method.
 		full_pgs = math.floor(probs/max_probs)
 		overflow = probs%max_probs
 		
