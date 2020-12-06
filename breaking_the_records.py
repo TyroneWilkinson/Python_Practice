@@ -16,8 +16,8 @@ def breakingRecords(scores):
         one season.
 
     Returns:
-    integers: 2 space separated integers denoting the number of times the
-        max and min points records were broken.
+    integers: Two integers denoting the number of times the max and min 
+        points records were broken.
     """
 
     def comparison(nums, num):
