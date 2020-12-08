@@ -21,5 +21,5 @@ def birthday(s, d, m):
 
 n = int(input())
 s = list(map(int, input().split()))
-d, m = list(map(int, input().split()))
+d, m = map(int, input().split())
 print(birthday(s, d, m))
