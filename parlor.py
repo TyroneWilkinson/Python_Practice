@@ -22,13 +22,12 @@ def whatFlavors(cost,money):
         if costs[i]+costs[j]==money: break
         if costs[i]+costs[j]>money: j-=1
         if costs[i]+costs[j]<money: i+=1
-    print("Costs: ",costs[i],costs[j])
     first = cost.index(costs[i])+1
     if costs[i] == costs[j]:
         print(first, cost.index(costs[j],first)+1)
         return
     print(*sorted([first, cost.index(costs[j])+1]))
-# whatFlavors([7,2,5,4,11],12)
+
 t = int(input()) # trips to the parlor
 for _ in range(t):
     money = int(input())
